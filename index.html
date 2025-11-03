@@ -44,7 +44,7 @@
  
   // KML-Datei laden
   let markers = [];
-  const layer = omnivore.kml('flohmarkt.kml').on('ready', function() {
+  const layer = omnivore.kml('https://cthiell-oss.github.io/Suedstadtflohmarkt/flohmarkt.kml').on('ready', function() {
     this.eachLayer(function(marker) {
       markers.push(marker);
     });
@@ -67,3 +67,4 @@
 </script>
 </body>
 </html>
+
