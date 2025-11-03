@@ -41,7 +41,7 @@
     const markerGroup = L.layerGroup().addTo(map);
  
     // KML laden
-    omnivore.kml('https://github.com/cthiell-oss/Suedstadtflohmarkt/flohmarkt.kml?v=' + Date.now()
+    omnivore.kml('https://github.com/cthiell-oss/Suedstadtflohmarkt/flohmarkt.kml?v=' + Date.now())
       .on('ready', function() {
         this.eachLayer(layer => {
           markerGroup.addLayer(layer);
@@ -70,5 +70,6 @@
 </script>
 </body>
 </html>
+
 
 
